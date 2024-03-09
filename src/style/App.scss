@@ -1,0 +1,56 @@
+$background: #1f1f1f;
+@use "./mixins.scss" as mixins;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: $background;
+}
+
+.Card{
+  @include mixins.baseContent(95%, 80% , rgb(0, 0, 0))
+  
+}
+.card_add_user{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_add_Inputs{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+  input{
+    width: 230px;
+    height: 20px;
+    outline: none;
+    padding: 3px 8px;
+    background: rgb(26, 26, 26);
+    border: 1px solid #616161;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+  }
+  input::placeholder{
+    font-size: 12px;
+  }
+  button{
+    padding: 5px 30px;
+    font-weight: 600;
+    color: #c2c2c2;
+    border: 1px solid #616161;
+    background: #252525;
+    border-radius: 5px;
+  }
+  button:hover{
+    background: #333333;
+  }
+  button:active{
+    background: #858585;
+  }
+}

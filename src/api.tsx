@@ -1,1 +1,0 @@
-export const peopleApi: string = "https://graph.microsoft.com/v1.0/"
