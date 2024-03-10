@@ -13,11 +13,10 @@ body{
   
 }
 .card_add_user{
-  width: 300px;
+  width: 90%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .card_add_Inputs{
   display: flex;
@@ -53,4 +52,9 @@ body{
   button:active{
     background: #858585;
   }
+}
+.user_content{
+  display: flex;
+  color: white;
+
 }

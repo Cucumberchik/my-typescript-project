@@ -1,7 +1,7 @@
 
 import { TypeTodo } from '../../types/types'
 
-export type IState = {
+export type TypeState = {
     users: TypeTodo[];
 };
 let initialState = {
@@ -11,7 +11,7 @@ type TypeAction = {
     payload: TypeTodo,
     type: string
 };
-export default function users(state: IState = initialState, action: TypeAction) {
+export default function users(state: TypeState = initialState, action: TypeAction) {
     switch (action.type) {
         case "add":
             return {
